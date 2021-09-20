@@ -12,6 +12,9 @@
 		830BD15426EBF04A0032A65E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 830BD15326EBF04A0032A65E /* Assets.xcassets */; };
 		830BD15726EBF04A0032A65E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 830BD15626EBF04A0032A65E /* Preview Assets.xcassets */; };
 		830BD16226EBF5D00032A65E /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 830BD16126EBF5D00032A65E /* FirebaseFirestore */; };
+		830BD16726F3BCE90032A65E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 830BD16626F3BCE90032A65E /* GoogleService-Info.plist */; };
+		830BD16926F3C1990032A65E /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830BD16826F3C1990032A65E /* ViewModel.swift */; };
+		830BD1A826F516970032A65E /* Todo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830BD1A726F516970032A65E /* Todo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +24,9 @@
 		830BD15326EBF04A0032A65E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		830BD15626EBF04A0032A65E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		830BD15826EBF04A0032A65E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		830BD16626F3BCE90032A65E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		830BD16826F3C1990032A65E /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		830BD1A726F516970032A65E /* Todo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Todo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,9 +61,12 @@
 			isa = PBXGroup;
 			children = (
 				830BD14F26EBF0490032A65E /* firestore_demo_spmApp.swift */,
-				830BD15126EBF0490032A65E /* ContentView.swift */,
+				830BD16A26F3C7270032A65E /* Views */,
+				830BD16B26F3C7300032A65E /* ViewModels */,
+				830BD16C26F3C73E0032A65E /* Models */,
 				830BD15326EBF04A0032A65E /* Assets.xcassets */,
 				830BD15826EBF04A0032A65E /* Info.plist */,
+				830BD16626F3BCE90032A65E /* GoogleService-Info.plist */,
 				830BD15526EBF04A0032A65E /* Preview Content */,
 			);
 			path = "firestore-demo-spm";
@@ -69,6 +78,30 @@
 				830BD15626EBF04A0032A65E /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		830BD16A26F3C7270032A65E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				830BD15126EBF0490032A65E /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		830BD16B26F3C7300032A65E /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				830BD16826F3C1990032A65E /* ViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		830BD16C26F3C73E0032A65E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				830BD1A726F516970032A65E /* Todo.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,6 +169,7 @@
 			files = (
 				830BD15726EBF04A0032A65E /* Preview Assets.xcassets in Resources */,
 				830BD15426EBF04A0032A65E /* Assets.xcassets in Resources */,
+				830BD16726F3BCE90032A65E /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -147,7 +181,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				830BD15226EBF0490032A65E /* ContentView.swift in Sources */,
+				830BD16926F3C1990032A65E /* ViewModel.swift in Sources */,
 				830BD15026EBF0490032A65E /* firestore_demo_spmApp.swift in Sources */,
+				830BD1A826F516970032A65E /* Todo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
